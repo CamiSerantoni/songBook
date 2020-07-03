@@ -1,26 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React,  {useEffect, useState, Fragment} from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function App(){
+
+  //use useState with 3 differents ones
+  const [artist, addArtist] = useState('');
+  const [liric, addLiric] = useState([]);
+  const [info, addInfo] = useState({}); 
+  return <p> Hola!!!! </p>
+
+
 }
 
 export default App;
+
