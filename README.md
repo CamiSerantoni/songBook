@@ -1,11 +1,12 @@
 
 
-# Song's Book  📘🎼🎶🎵🎧🔊
+# Song's Book  📘🎼
 
 Estas aburrido(a) de cantar y no saberte la letra de alguna canción? de cantarla mal? o equivocarte siempre en la misma  parte? Song's Book es la solución!, Songs book es  una aplicación web que permite ver la letra de la canción que buscamos, solo colocando el artista y el titulo de la canción que buscamos!. 
 
 
 ## El proyecto se puede visualizar aquí: 
+🎶🎵🎧🔊
 
 https://songsbook.netlify.app/
 
