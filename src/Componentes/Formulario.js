@@ -1,4 +1,5 @@
 import React,  {useState} from 'react';
+import guitar  from '../images/music.png';
 
 
 function Formulario({askingAPILiric}){
@@ -30,14 +31,15 @@ function Formulario({askingAPILiric}){
 
 
     return(
-    <div className="bg-info">
+    <div className="backgrund-container">
     <div className="container">
         <div className="row">
             <form 
               onSubmit = {sendInformation}
               className="col card text-white bg-transparent  mb-5 pt-5 pb-2">
                 <fieldset>
-                    <legend className="text-center">Buscador Letras Canciones</legend>
+                    <legend className="text-center"> Song Book </legend>
+                    <img src={guitar} alt="guitar" className="music-img" />
                     <div className="row">
                         <div className="col-md-6">
                           <div className="form-group">

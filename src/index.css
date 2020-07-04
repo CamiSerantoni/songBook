@@ -8,6 +8,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.backgrund-container{
+  background: #C04848;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #480048, #C04848);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #480048, #C04848); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   
+
+}
 
 
 label {
@@ -28,19 +35,19 @@ legend {
 legend::before {
   position: absolute;
   content: '';
-  width: calc(120% );
+  width: calc(150% );
   display: block;
-  background-color:#EB6864;
+  background-color:#1cb884;
   height: 40px;
   z-index:-1;
   left: -30px;
   right: -30px;
-  transform: rotate(-1deg);
+  transform: rotate(-6deg);
   transition: transform .3s ease;
 }
 
 legend:hover::before{
-  transform: rotate(2deg);
+  transform: rotate(3deg);
 }
 
 form.card{
@@ -51,10 +58,19 @@ form.card{
   white-space: pre-wrap;
 }
 
-.card img {
+.artist-photo {
   width: 100%;
   margin-bottom: 1rem;
 }
+
+.music-img {
+  width: 30%;
+  margin-top: -10%;
+  margin-left: -9%;
+  display: flex;
+  float: left;
+}
+
 h2 {
   margin-bottom: 2rem;
   font-family: 'Work Sans', sans-serif;
@@ -75,3 +91,31 @@ h2 {
 .fa-lastfm {
   color: #d51007;
 }
+
+/* Para 480px */  
+@media only screen and (max-width: 500px) and (min-width: 341px) {  
+  .music-img {
+    width: 30%;
+    height: 22vh;
+    margin-top: 9%;
+    margin-left: -2%;
+    display: flex;
+    float: left;
+}
+.text-center {
+  text-align: center !important;
+}
+
+legend {
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  width: auto;
+  margin: 0;
+  padding-left: 20px;
+  margin-bottom: 30px;
+  margin-left: 1px;
+  font-family: 'Work Sans', sans-serif;
+
+}
+} 

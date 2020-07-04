@@ -30,12 +30,14 @@ const askingAPILiric = async search => {
 
 //Method to ask the Info Api 
 const askingAPIInfo = async() => {
-  const url = `https://theaudiodb.com/api/v1/json/1/search.php?s=${artista}`;
+  if (artista) {
+    const url = `https://theaudiodb.com/api/v1/json/1/search.php?s=${artista}`;
 
   const result = await axios(url);
  
- addInfo(result.data.artists[0]);
-  //console.log(info);
+  addInfo(result.data.artists[0]);
+  } 
+
 }
 
 useEffect(
@@ -51,16 +53,23 @@ useEffect(
       <Formulario askingAPILiric={askingAPILiric}
       />
 
-    <div className="container mt-5">
-      <div className="row">
-      <div className="col-md-6"></div>
-       <Informacion info={info}/>
-      <div className="col-md-6">
-        <Cancion 
-        liric={liric}/>
+      <div className="container mt-5">
+        <div className="row">
+          <div className="col-md-6">
+          
+            <Informacion info={info}
+            
+            />
+          </div>
+            <div className="col-md-6">
+              
+              <Cancion 
+              liric={liric}
+
+              />
+            </div>
+        </div>
       </div>
-    </div>
-</div>
     </Fragment>
   )
 }
