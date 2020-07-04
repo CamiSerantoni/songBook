@@ -66,7 +66,7 @@ form.card{
 .music-img {
   width: 30%;
   margin-top: -10%;
-  margin-left: -9%;
+  margin-left: -5%;
   display: flex;
   float: left;
 }
@@ -95,8 +95,8 @@ h2 {
 /* Para 480px */  
 @media only screen and (max-width: 500px) and (min-width: 341px) {  
   .music-img {
-    width: 30%;
-    height: 22vh;
+    width: 35%;
+    height: 25vh;
     margin-top: 9%;
     margin-left: -2%;
     display: flex;
