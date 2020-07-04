@@ -12,41 +12,36 @@ function App(){
   const [info, addInfo] = useState({}); 
 
 //creating a method to ask to the api liric songs 
-const askingAPILiric = async search => {
-  const {artista, cancion} = search;
-  const url = `https://api.lyrics.ovh/v1/${artista}/${cancion}`;
+  const askingAPILiric = async search => {
+    const {artista, cancion} = search;
+    const url = `https://api.lyrics.ovh/v1/${artista}/${cancion}`;
 
   //asking to the API 
    const result =  await axios(url);
 
   //save the artist  that i searched 
-  addArtista(artista)
+  addArtista(artista);
 
    //savethe liric existing
-   addLiric(result.data.lyrics)
-
-
+   addLiric(result.data.lyrics);
 }
 
 //Method to ask the Info Api 
 const askingAPIInfo = async() => {
-  if (artista) {
+  if (artista){
     const url = `https://theaudiodb.com/api/v1/json/1/search.php?s=${artista}`;
-
   const result = await axios(url);
- 
   addInfo(result.data.artists[0]);
-  } 
+  }
 
 }
 
-useEffect(
-  () => {
-  askingAPIInfo();
 
-  }, [artista]
-)
-
+  useEffect(() => {
+    askingAPIInfo();
+    },
+  )
+ 
   return (
 
     <Fragment>

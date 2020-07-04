@@ -38,7 +38,7 @@ function Formulario({askingAPILiric}){
               onSubmit = {sendInformation}
               className="col card text-white bg-transparent  mb-5 pt-5 pb-2">
                 <fieldset>
-                    <legend className="text-center"> Song Book </legend>
+                    <legend className="text-center"> Song's Book </legend>
                     <img src={guitar} alt="guitar" className="music-img" />
                     <div className="row">
                         <div className="col-md-6">
