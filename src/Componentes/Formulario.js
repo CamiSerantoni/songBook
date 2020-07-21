@@ -43,7 +43,7 @@ function Formulario({askingAPILiric}){
                     <div className="row">
                         <div className="col-md-6">
                           <div className="form-group">
-                              <label>Artist</label>
+                              <label>Artista</label>
                               <input 
                                   type="text" 
                                   className="form-control" 
