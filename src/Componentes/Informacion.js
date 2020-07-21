@@ -2,7 +2,7 @@ import React from 'react';
 
 function Informacion({info}) { 
 
-    if(Object.keys(info).length === 0 ) return; 
+    if(Object.keys(info).length === 0 ) return null; 
 
 
 
